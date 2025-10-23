@@ -1,4 +1,4 @@
-package com.codefirstgirls;
+package com.codefirstgirls.menu;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

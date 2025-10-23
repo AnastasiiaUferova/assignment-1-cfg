@@ -1,9 +1,9 @@
-package com.codefirstgirls;
+package com.codefirstgirls.menu;
 
 public abstract class MenuItem {
-  String name;
-  int basePrice;
-  int currentPrice;
+  private String name;
+  private int basePrice;
+  private int currentPrice;
 
   MenuItem(String name, int price){
     this.name =  name;
@@ -34,7 +34,15 @@ public abstract class MenuItem {
     return basePrice;
   }
 
-  public void setBasePrice(int basePrice) {
-    this.basePrice = basePrice;
+  public void setBasePrice(int price) {
+    this.basePrice = price;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
   }
 }
