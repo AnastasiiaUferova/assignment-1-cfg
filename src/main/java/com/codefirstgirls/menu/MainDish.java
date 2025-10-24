@@ -6,7 +6,7 @@ public class MainDish extends MenuItem {
   }
 
   @Override
-  void getMenuItemSlogan() {
-    System.out.println("Your hunger ends here with " + super.getName() + '!');
+  public void getMenuItemSlogan() {
+    System.out.println("Your hunger ends here with " + super.getName() + " for " + super.getPrice() + " pln!" );
   }
 }
