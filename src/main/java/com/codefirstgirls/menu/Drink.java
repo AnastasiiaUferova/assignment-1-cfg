@@ -7,8 +7,9 @@ public class Drink extends MenuItem {
   }
 
   @Override
-  void getMenuItemSlogan() {
-    System.out.println("Good times start with a sip of " + super.getName() + '!');
+  public void getMenuItemSlogan() {
+    System.out.println("Good times start with a sip of " + super.getName() +
+      '!' + " Only " + super.getPrice() + " pln a cup!" );
   }
 }
 

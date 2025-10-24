@@ -4,14 +4,12 @@ public abstract class MenuItem {
   private String name;
   private double price;
 
-  MenuItem(String name, int price){
+  MenuItem(String name, double price){
     this.name =  name;
     this.price = price;
   }
 
-  public void removeDiscount(){
-    this.currentPrice = this.basePrice;
-  };
+  public abstract void getMenuItemSlogan();
 
   public double getPrice() {
     return this.price;
