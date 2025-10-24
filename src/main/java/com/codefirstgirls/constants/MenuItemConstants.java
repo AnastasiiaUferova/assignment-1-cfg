@@ -54,9 +54,9 @@ public class MenuItemConstants {
     43,
   };
 
-  private static final Map<String, Double> dishes = new HashMap<String, Double>();
-  private static final Map<String, Double> drinks = new HashMap<String, Double>();
-  private static final Map<String, Double> desserts = new HashMap<String, Double>();
+  private static final Map<String, Double> dishes = new HashMap<>();
+  private static final Map<String, Double> drinks = new HashMap<>();
+  private static final Map<String, Double> desserts = new HashMap<>();
 
   static private void CreateMenuMap(String[] names, double[] prices, Map<String, Double> dishWithPrices){
     for(int i = 0; i < names.length; i++){
@@ -78,5 +78,5 @@ public class MenuItemConstants {
     };
   }
 
-};
+}
 
