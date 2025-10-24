@@ -1,7 +1,7 @@
 package com.codefirstgirls.menu;
 
 public class MainDish extends MenuItem {
-  MainDish(String name, int price) {
+  public MainDish(String name, double price) {
     super(name, price);
   }
 

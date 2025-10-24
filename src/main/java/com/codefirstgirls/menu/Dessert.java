@@ -2,12 +2,12 @@ package com.codefirstgirls.menu;
 
 public class Dessert extends MenuItem {
 
-  Dessert(String name, int price){
+  public Dessert(String name, double price){
     super(name, price);
   }
 
   @Override
-  void getMenuItemSlogan() {
-    System.out.println(super.getName() + "! Satisfy your sugar cravings!");
+  public void getMenuItemSlogan() {
+    System.out.println(super.getName() + "! Satisfy your sugar cravings! Only " + super.getPrice() + " pln!");
   }
 }
