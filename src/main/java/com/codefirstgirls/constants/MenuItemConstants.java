@@ -1,5 +1,7 @@
 package com.codefirstgirls.constants;
 
+import com.codefirstgirls.menu.MenuPosition;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -68,16 +70,13 @@ public class MenuItemConstants {
     CreateMenuMap(dessertNames, dessertPrices, desserts);
   }
 
-  public Map<String, Double> getDishes(){
-    return dishes;
+  public static Map<String, Double> getMenuPositions (MenuPosition type){
+    return switch(type){
+      case MenuPosition.MAIN_DISH -> dishes;
+      case MenuPosition.DESSERT -> desserts;
+      case MenuPosition.DRINK -> drinks;
+    };
   }
 
-  public Map<String, Double> getDrinks(){
-    return drinks;
-  }
-
-  public Map<String, Double> getDesserts() {
-    return desserts;
-  }
 };
 
