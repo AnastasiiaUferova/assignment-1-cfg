@@ -39,10 +39,3 @@ public class MenuItemGenerator {
       return menuItemArray;
   }
 }
-
-
-
-
-
-
-
